@@ -5,13 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require "ffaker"
 
-20.times do |actor|
-  actor = Actor.new(
-    first_name: FFaker::Name.first_name,
-    last_name: FFaker::Name.last_name,
-    known_for: FFaker::Movie.title,
-  )
-  actor.save
-end
+movie = Movie.new(
+  title: "Diehard",
+  year: "1988",
+  plot: "During a christmas, a group of mercenaries decided to rob a building",
+)
+movie.save
