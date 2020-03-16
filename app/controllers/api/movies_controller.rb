@@ -20,13 +20,12 @@ class Api::MoviesController < ApplicationController
   end
 
   def show
-    the_id = params[:id]
-    @movie = Movie.find_by(id: the_id)
+    @movie = Movie.find(params[:id])
     render "show.json.jb"
   end
 
   def update
-    @movie = Movie.find_by(id: params[:id])
+    @movie = Movie.find(params[:id])
 
     @movie.title = params[:title] || @movie.title
     @movie.year = params[:year] || @movie.year

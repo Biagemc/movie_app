@@ -5,4 +5,5 @@
   plot: movie.plot,
   director: movie.director,
   english: movie.english,
+  actors: movie.actors,
 }

@@ -5,4 +5,5 @@
   gender: actor.gender,
   age: actor.age,
   known_for: actor.known_for,
+  movie: actor.movie,
 }
