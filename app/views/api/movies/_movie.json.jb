@@ -6,5 +6,5 @@
   director: movie.director,
   english: movie.english,
   actors: movie.actors,
-  genres: movie.genres,
+  genres: movie.genre_name,
 }
